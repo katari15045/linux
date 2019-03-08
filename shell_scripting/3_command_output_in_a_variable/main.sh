@@ -1,0 +1,2 @@
+data=$(pwd)
+echo ${data}
