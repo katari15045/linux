@@ -5,7 +5,14 @@ section .text
 	global _start
 
 _start:
-	mov rax, 3
+	push 1
+	push 2
+	push 3
+	pop rax
+	call print_digit
+	pop rax
+	call print_digit
+	pop rax
 	call print_digit
 	call wrap_up
 
